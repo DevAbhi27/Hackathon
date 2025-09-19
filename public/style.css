@@ -10,6 +10,15 @@ body, html {
   height: 100%;
   width: 100%;
 }
+#bra{
+    font-size: 70px;
+    color: #C8A45F;
+}
+#man{
+    font-size: 45px;
+    color: white;
+    margin-top: 19px;
+}
 
 /* Background */
 .background {

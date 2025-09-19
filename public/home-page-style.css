@@ -13,6 +13,16 @@ h1, h2, h3 {
     color: #F0E7D6; /* Light headings */
 }
 
+#bra{
+    font-size: 70px;
+    color: #C8A45F;
+}
+#man{
+    font-size: 45px;
+    color: white;
+    margin-top: 19px;
+}
+
 /* About page heading adjustments */
 .about-title {
     font-size: 2.3rem;
@@ -75,7 +85,7 @@ nav .logo {
 }
 
 nav .logo img {
-    height: 40px; /* Adjust logo size */
+    height: 75px; /* Adjust logo size */
     margin-right: 10px;
     /* Image needed: logo.png (your India Explorers logo) */
 }
