@@ -50,7 +50,7 @@ let pythonServerReady = false;
 
 // Start Python Flask server automatically
 function startPythonServer() {
-    console.log(' Starting Python Flask server...');
+    console.log(' Starting Python Flask server ');
     
     pythonProcess = spawn('python', ['app.py'], {
         cwd: __dirname,
