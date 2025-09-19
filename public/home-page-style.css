@@ -1,0 +1,403 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* You can choose a better font */
+    color: #F0E7D6; /* Light text for dark theme */
+    background-color: #1A1A1A; /* Dark background */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #F0E7D6; /* Light headings */
+}
+
+a {
+    text-decoration: none;
+    color: #F0E7D6; /* Light link color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #C8A45F; /* Gold button */
+    color: #1A1A1A; /* Dark text on gold */
+}
+
+button:hover {
+    background-color: #d8b87f; /* Lighter gold on hover */
+}
+
+/* Header & Navigation */
+header {
+    background-color: #2A5288; /* Primary blue from logo */
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit nav width */
+    margin: 0 auto;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F0E7D6;
+}
+
+nav .logo img {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+    /* Image needed: logo.png (your India Explorers logo) */
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    padding: 5px 0;
+   
+}
+
+nav ul li a:hover {
+    color: #C8A45F; /* Gold on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 600px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+
+.hero-content {
+    z-index: 1;
+    color: #F0E7D6;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* Main Content Sections */
+main {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Find Adventure Section */
+.find-adventure-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.find-adventure-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #C8A45F; /* Gold heading */
+}
+
+.search-filters {
+    margin-bottom: 40px;
+}
+
+.search-filters select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #C8A45F;
+    background-color: #333;
+    color: #F0E7D6;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.category-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.category-card {
+    background-color: #2A5288; /* Primary blue for cards */
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category-card:hover {
+    background-color: #3A6298; /* Slightly lighter blue on hover */
+}
+
+.category-card img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 1.1rem;
+    color: #F0E7D6;
+}
+
+/* Popular Journeys Section */
+.popular-journeys-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.popular-journeys-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #C8A45F;
+}
+
+.journey-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.journey-card {
+    background-color: #333; /* Darker card background */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.journey-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.journey-card h3 {
+    font-size: 1.3rem;
+    padding: 15px 20px 5px;
+    color: #F0E7D6;
+}
+
+.journey-card p {
+    font-size: 0.9rem;
+    color: #CCCCCC;
+    padding: 0 20px 15px;
+}
+
+.journey-card button {
+    margin: 0 20px 20px;
+    width: calc(100% - 40px); /* Full width within padding */
+    background-color: #2A5288; /* Blue button */
+    color: #F0E7D6;
+}
+
+.journey-card button:hover {
+    background-color: #3A6298;
+}
+
+/* Why Travel With Us Section */
+.why-travel-with-us-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.why-travel-with-us-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #C8A45F;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.feature-item {
+    text-align: center;
+    flex: 1; /* Distribute space evenly */
+    min-width: 180px; /* Minimum width for items */
+}
+
+.feature-item img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #F0E7D6;
+}
+
+/* Footer */
+footer {
+    background-color: #111; /* Even darker footer */
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-media img {
+    height: 30px;
+    width: 30px;
+  
+}
+
+/* Religious Journey Page Specific Styles */
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #F0E7D6;
+    opacity: 0.9;
+}
+
+.journey-card .description {
+    font-size: 0.85rem;
+    color: #AAAAAA;
+    padding: 0 20px 10px;
+    line-height: 1.4;
+}
+
+.religious-experiences-section {
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: #222;
+    padding: 50px 30px;
+    border-radius: 15px;
+}
+
+.religious-experiences-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #C8A45F;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.experience-card {
+    background-color: #2A5288;
+    padding: 30px 25px;
+    border-radius: 10px;
+    text-align: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card:hover {
+    background-color: #3A6298;
+}
+
+.experience-card h3 {
+    font-size: 1.3rem;
+    color: #C8A45F;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    color: #F0E7D6;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Package Details Styling */
+.package-details {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.duration-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.duration {
+    font-size: 18px;
+    color: #F0E7D6;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 24px;
+    color: #C8A45F;
+    font-weight: 700;
+}
+
+/* Explore More Tab Styling */
+.explore-more-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 200px;
+}
+
+.explore-more-text {
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

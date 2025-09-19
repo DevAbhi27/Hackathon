@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Background */
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("static/india-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.65); /* Dark overlay for luxury vibe */
+  z-index: 0;
+}
+
+/* Login Card */
+.login-page {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  background: rgba(20, 20, 30, 0.85);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(200,164,95,0.3); /* Subtle gold border */
+}
+
+.first-text {
+  margin-bottom: 25px;
+}
+
+#First-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #C8A45F; /* Gold heading */
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+#Second-text {
+  font-size: 15px;
+  color: #ddd;
+}
+
+/* Phone Input */
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  width: 100%;       /* Make it respect parent width */
+  overflow: hidden;  /* Prevent overflow */
+}
+
+#country-code {
+  flex: 0 0 110px;   /* Fixed width */
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(200,164,95,0.4);
+  font-size: 15px;
+  background: rgba(255,255,255,0.08);
+  color: #f0e7d6;
+}
+
+#phone {
+  flex: 1;           /* Take remaining space */
+  min-width: 0;      /* Prevents overflow */
+  padding: 12px;
+  border: 1px solid rgba(200,164,95,0.4);
+  border-radius: 8px;
+  font-size: 15px;
+  background: rgba(255,255,255,0.08);
+  color: #f0e7d6;
+}
+
+
+#phone {
+  flex: 1;
+}
+
+/* Main Button */
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #C8A45F, #b8944a);
+  color: #1A1A1A;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+ 
+}
+
+
+
+.others{
+  color: white;
+}
+
+
+/* Social Login */
+.social-login {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+
+.social-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+.google:hover,.apple:hover,.facebook:hover{
+  background-color: #cccc;
+}
+
+.google {
+  background: #bec6c6;
+  color: #444;
+}
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+.apple {
+  background: #000;
+  color: white;
+}
+/* Bottom Text */
+p.small-text {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #C8A45F; /* Gold accent link */
+  cursor: pointer;
+}
+p.small-text:hover {
+  text-decoration: underline;
+}
+
