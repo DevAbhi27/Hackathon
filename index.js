@@ -54,7 +54,8 @@ function startPythonServer() {
     
     pythonProcess = spawn('python', ['app.py'], {
         cwd: __dirname,
-        stdio: ['pipe', 'pipe', 'pipe']
+        stdio: ['pipe', 'pipe', 'pipe'],
+        env: { ...process.env, PORT: '5000' }
     });
 
     pythonProcess.stdout.on('data', (data) => {
@@ -110,7 +111,7 @@ app.get('/', (req, res) => {
 });
 
 // Health check endpoint
-app.get('/health', async (req, res) => {
+app.get('/api/health', async (req, res) => {
     const pythonHealthy = await checkPythonServer();
     res.json({
         express: 'healthy',
@@ -120,7 +121,7 @@ app.get('/health', async (req, res) => {
 });
 
 // Chat endpoint with better error handling
-app.post('/chat', async (req, res) => {
+app.post('/api/chat', async (req, res) => {
     try {
         if (!req.body.message) {
             return res.status(400).json({ 
