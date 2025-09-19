@@ -13,6 +13,15 @@ h1, h2, h3 {
     color: #F0E7D6; /* Light headings */
 }
 
+/* About page heading adjustments */
+.about-title {
+    font-size: 2.3rem;
+}
+
+.core-values-title {
+    font-size: 1.0rem;
+}
+
 a {
     text-decoration: none;
     color: #F0E7D6; /* Light link color */
